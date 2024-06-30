@@ -1,0 +1,256 @@
+/* General reset and styling */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(186, 235, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: auto; /* Ensure the body can scroll */
+}
+
+.main {
+  position: relative;
+  margin: 50px;
+  background-color: rgb(255, 255, 250);
+  width: 100%;
+  max-width: 1000px;
+  max-height: 90vh; /* Set a max-height for the container */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0px 35px 35px rgb(0, 0, 0, 0.5);
+  transition: 0.2s ease-in-out;
+  overflow-y: auto; /* Ensure the main container can scroll vertically */
+}
+
+.main:hover {
+  box-shadow: 5px 35px 30px rgb(0, 0, 0, 0.8);
+}
+
+.main .left,
+.main .right {
+  position: relative;
+  padding: 40px;
+}
+
+.main .left {
+  background-color: #003147;
+  overflow-y: auto; /* Ensure the left section can scroll if necessary */
+}
+
+.main .right {
+  background-color: #fff;
+  overflow-y: auto; /* Ensure the right section can scroll if necessary */
+}
+
+/* Profile box styling */
+.profilebox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.226);
+}
+
+.imgbx {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profilebox .imgbx img {
+  width: 100%;
+  height: 100%;
+}
+
+.profilebox h2 {
+  color: white;
+  margin-top: 20px;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.1em;
+}
+
+.profilebox h2 span {
+  font-size: 0.7em;
+  font-weight: 300;
+}
+
+/* Contact info styling */
+.contact {
+  padding-top: 40px;
+}
+
+.contact h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact ul {
+  list-style: none;
+}
+
+.contact ul li {
+  margin: 10px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.contact ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.contact ul li span.text {
+  color: #fff;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+/* Education and other sections styling */
+.education li {
+  margin-bottom: 30px;
+}
+
+.education h4 {
+  color: #fff;
+  font-weight: 500;
+}
+
+.education h5 {
+  color: #03a9f4;
+}
+
+.languages .box,
+.programming-languages .box {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.languages .box .percente,
+.programming-languages .box .percente {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 10px;
+}
+
+.languages .box .percente div,
+.programming-languages .box .percente div {
+  height: 100%;
+  background-color: #03a9f4;
+}
+
+.languages .box h4,
+.programming-languages .box h4 {
+  color: #848c99;
+  font-weight: 400;
+}
+
+/* Right side sections styling */
+.about {
+  padding-bottom: 50px;
+}
+
+.title2 {
+  padding-bottom: 10px;
+  color: #003147;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  color: #686868;
+}
+
+.about .box {
+  display: flex;
+  margin: 20px 0;
+}
+
+.about .box .text {
+  text-transform: uppercase;
+}
+
+.about .box .year {
+  color: #686868;
+  min-width: 200px;
+}
+
+.about .box .text h4 {
+  font-size: 16px;
+  color: #2a7da4;
+}
+
+.skills .box {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+}
+
+.skills .box .percente {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 10px;
+}
+
+.skills .box .percente div {
+  height: 100%;
+  background-color: #03a9f4;
+}
+
+.skills .box h4 {
+  color: #848c99;
+  font-weight: 400;
+}
+
+.interest ul {
+  list-style: none;
+}
+
+.interest ul li {
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.interest ul li .fa {
+  color: #03a9f4;
+  font-size: 20px;
+}
+
+/* Print button styling */
+#printButton {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 40px;
+  border: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+#printButton:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
