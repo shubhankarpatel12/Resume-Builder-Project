@@ -40,7 +40,7 @@ Ensure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone https://github.com/shubhankarpatel12/Resume-Builder-Project.git
-   cd homeheaven
+   cd resume-builder
    ```
 
 2. Install the dependencies:
@@ -86,5 +86,7 @@ We welcome contributions to Resume Builder! Please follow these steps:
 3. Commit your changes (`git commit -am 'Add new feature'`)
 4. Push to the branch (`git push origin feature-branch`)
 5. Create a new Pull Request
+
+
 
 
